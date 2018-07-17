@@ -56,13 +56,13 @@ if __name__ == '__main__':
     labels = []
 
     # load smile data
-    PATH = "/home/samiksha/Desktop/emotion-detection-master/data/smile/"
+    PATH = "****" #location of files with smile images (here stored in smile folder)
     for idx, filename in enumerate(smilefiles):
         phi[idx] = vectorize(PATH + filename)
         labels.append(1)
 
     # load neutral data    
-    PATH = "/home/samiksha/Desktop/emotion-detection-master/data/neutral/"
+    PATH = "****" #location of files with neutral images (here stored in neutral folder)
     offset = idx + 1
     for idx, filename in enumerate(neutralfiles):
         phi[idx + offset] = vectorize(PATH + filename)
